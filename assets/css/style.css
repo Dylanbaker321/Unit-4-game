@@ -1,0 +1,32 @@
+.test {
+    color: red;
+    text-align: center;
+    font-size: 3em;
+}
+
+#winsLoses {
+    background-color: blueviolet;
+
+}
+
+#crystalOne {
+    float: left;
+    size: 1in;
+
+}
+#crystalTwo {
+    float: left;
+    size: 1in;
+}
+
+#crystalThree {
+    float: left;
+    size: 1in;
+
+}
+
+#crystalfour {
+    float: left;
+    size: 1in;
+    
+}
