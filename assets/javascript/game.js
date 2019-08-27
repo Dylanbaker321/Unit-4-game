@@ -24,7 +24,7 @@ $(document).ready(function () {
 
     function winner() {
         wins++;
-        $("#wins").text("you have won " + wins + " Times");
+        $("#wins").text("You Have Won " + wins + " Times");
         alert("Winner")
 
         //calls reset function 
@@ -34,7 +34,7 @@ $(document).ready(function () {
     // Function for updating page when you Lose
     function loser() {
         loses++;
-        $("#loses").text("you have lost " + loses + " Times");
+        $("#loses").text("You Have Lost " + loses + " Times");
         alert("Loser");
         //calls reset function 
         tryAgain()

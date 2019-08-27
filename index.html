@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>Crystal Game</title>
+    <title>Crystal Game</title>
 
 
 
-<!-- link to style.css-->
-<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-<!-- link to reset.css-->
-<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <!-- link to style.css-->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!-- link to reset.css-->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+
+    <!--- Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 
 
@@ -16,36 +21,53 @@
 
 
 
+<div class="container">
 
-<body>
-<h1 class="test"> The crystal Game</h1>
-<p class="main">Instructions</p>
-<div id="pointTotal"></div>
-<div id="winsLoses">Your wins losses score goes here
-<div id="wins">Total number of wins</div>
-<div id="loses">Total number of loses</div>
+    <body>
+        <h1 class="test"> The Crystal Game</h1>
+        </br>
+        <!-- <h2 class="hclass">Instructions</h2> -->
+        <p class="main">Your goal is to get the target score displayed below, each crystal will hava a randomly assigned
+            number between 1-12. You MUST GET THE NUMBER EXACTLY to win. Good luck and Have fun
+        </p>
+        <div class="row">
+            <div class="col-3">
+                <div class="pBox">
+                    <h6 class="smallHeader">The Number Of Points You Are Trying To Get Is</h6>
+                    <div id="pointTotal"></div>
+                </div>
+
+                <div id="winsLoses">
+                    <div id="wins">Total number of wins</div>
+                    <div id="loses">Total number of loses</div>
+                </div>
+                <div id="score">Your Current Score is 0</div>
+            </div>
+
+            <!--Crystals -->
+          
+                <img id="crystalOne" src="assets/images/crystal1.png" alt="crystalOne">
+                <img id="crystalTwo" src="assets/images/crystal2.png" alt="crystalTwo">
+                <img id="crystalThree" src="assets/images/crystal3.png" alt="crystalThree">
+                <img id="crystalFour" src="assets/images/crystal4.png" alt="crystalFour">
+          
+            <!--Score area-->
+
+
+        </div>
+
+
+
+
+
+        <!-- link to jquery-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- link to game.js-->
+        <script src="assets/javascript/game.js"></script>
+
+
+    </body>
 </div>
 
-<!--Crystals -->
-<img id="crystalOne" src="assets/images/crystal1.png" alt="crystalOne">
-<img id="crystalTwo" src="assets/images/crystal2.png" alt="crystalTwo">
-<img id="crystalThree" src="assets/images/crystal3.png" alt="crystalThree">
-<img id="crystalFour" src="assets/images/crystal4.png" alt="crystalFour">
-
-<!--Score area-->
-<br></br>
-<div id="score">Your Current Score is 0</div>
-
-
-
-
-
-<!-- link to jquery-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<!-- link to game.js-->
-<script src="assets/javascript/game.js"></script>
-
-
-</body>
 
 </html>
